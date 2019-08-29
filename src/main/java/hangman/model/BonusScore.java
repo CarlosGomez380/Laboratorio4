@@ -19,8 +19,20 @@ public class BonusScore implements GameScore{
 	*@retun score, Integer with the score.
 	*@throws ExceptionInvalidParamaters
 	*/
-	public int calulateScore(int correctCount, int incorrectCount){
-		return 0;
+	public int calculateScore(int correctCount, int incorrectCount) throws ExceptionInvalidParameters {
+		if (correctCount>=0 && incorrectCount<=0){
+			int score = 0;
+			int answ = score + (correctCount*10) + (incorrectCount*5);
+			if (answ<=0){
+				return 0;
+			}
+			else{
+				return answ;
+			}
+		}
+		else{
+			throw new ExceptionInvalidParameters("Invalid Parameters");
+		}
 	}
 
 

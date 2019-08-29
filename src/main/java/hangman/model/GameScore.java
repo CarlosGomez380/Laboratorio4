@@ -9,7 +9,7 @@ package hangman.model;
 
 public interface GameScore {
 
-	public int calulateScore(int correctCount, int incorrectCount);
+	public int calculateScore(int correctCount, int incorrectCount)throws ExceptionInvalidParameters ;
 
 
 }

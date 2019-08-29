@@ -19,7 +19,7 @@ public class PowerScore implements GameScore{
 	*@retun score, Integer with the score.
 	*@throws ExceptionInvalidParamaters
 	*/
-	public int calulateScore(int correctCount, int incorrectCount){
+	public int calculateScore(int correctCount, int incorrectCount){
 		return 0;
 	}
 
