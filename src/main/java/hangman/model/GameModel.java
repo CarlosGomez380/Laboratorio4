@@ -29,7 +29,7 @@ public class GameModel {
     private HangmanDictionary dictionary;
     
     private Scanner scan;
-    private String randomWord;
+    private static String randomWord;
     private char[] randomWordCharArray;
     
     
@@ -135,7 +135,7 @@ public class GameModel {
     
     //method: getWordLength
     //purpose: return length of current word
-    public int getWordLength(){
+    public static int getWordLength(){
         return randomWord.length();
     }
 

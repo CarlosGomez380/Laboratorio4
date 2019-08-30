@@ -107,7 +107,8 @@ public class GameScoreTest{
 	*/
 	@Test
 	public void powerScoreTest1() throws ExceptionInvalidParameters{
-		OriginalScore os = new OriginalScore();
+		PowerScore os = new PowerScore();
+		GameModel game= new GameModel();
 		Assert.assertEquals(0,os.calculateScore(0,-3254),0);
 	}
 
