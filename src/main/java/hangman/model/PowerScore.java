@@ -21,7 +21,7 @@ public class PowerScore implements GameScore{
 	*@throws ExceptionInvalidParamaters
 	*/
 	public int calculateScore(int correctCount, int incorrectCount)throws ExceptionInvalidParameters {
-		int score = 0;
+		int score=0;
 		if (correctCount>=0 && incorrectCount<=0){
 			if (correctCount == GameModel.getWordLength()){
 				for(int i=0; i<correctCount; i++){

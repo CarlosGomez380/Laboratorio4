@@ -31,7 +31,7 @@ public class OriginalScore implements GameScore{
 			}
 		}
 		else{
-            	throw new ExceptionInvalidParameters("Invalid Parameter");
+            		throw new ExceptionInvalidParameters("Invalid Parameter");
 		}
 	}
 
