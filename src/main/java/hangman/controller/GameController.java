@@ -27,6 +27,7 @@ import hangman.SwingProject;
 import hangman.model.GameModel;
 import hangman.model.Language;
 import hangman.view.GamePanel;
+import hangman.model.ExceptionInvalidParameters;
 
 public class GameController{
     private GamePanel panel;
@@ -73,7 +74,7 @@ public class GameController{
                 panel.getPoints().setText(lan.getPointsNameLabel()+ Integer.toString(model.getGameScore()));
                 int incorrectCount = model.getIncorrectCount();
                 int correctCount = model.getCorrectCount();
-                if(incorrectCount > 5 || correctCount == model.getWordLength()){
+                if(incorrectCount < -5 || correctCount == model.getWordLength()){
                     panel.getSkipButton().setEnabled(false);
                     for(JButton button : panel.getKeyboardButtonArray()){
                         button.setEnabled(false);

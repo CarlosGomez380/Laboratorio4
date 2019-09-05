@@ -16,7 +16,7 @@ import hangman.model.dictionary.HangmanDictionary;
 import hangman.model.dictionary.EnglishDictionaryDataSource;
 import hangman.view.HangmanNoviolentoPanel;
 import hangman.view.HangmanPanel;
-import hangman.model.OriginalScore;
+import hangman.model.PowerScore;
 import hangman.model.GameScore;
 
 public class HangmanFactoryServices extends com.google.inject.AbstractModule {
@@ -26,7 +26,7 @@ public class HangmanFactoryServices extends com.google.inject.AbstractModule {
 	bind(Language.class).to(English.class);
 	bind(HangmanDictionary.class).to(EnglishDictionaryDataSource.class);
 	bind(HangmanPanel.class).to(HangmanNoviolentoPanel.class);
-	bind(GameScore.class).to(OriginalScore.class);
+	bind(GameScore.class).to(PowerScore.class);
     }
 
 }
