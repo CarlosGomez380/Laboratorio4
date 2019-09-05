@@ -27,7 +27,6 @@ public class GameModel {
     private int gameScore;
     private int[] lettersUsed;
     
-    
     private HangmanDictionary dictionary;
     private GameScore gameScoreClass;	    
 
@@ -63,6 +62,7 @@ public class GameModel {
     public void setDateTime() {
         this.dateTime = LocalDateTime.now();
     }
+
     
     //method: makeGuess
     //purpose: check if user guess is in string. Return a
@@ -79,7 +79,7 @@ public class GameModel {
             incorrectCount--;
         } else {
             correctCount += positions.size();
-        }
+	}
 	gameScore = gameScoreClass.calculateScore(correctCount,incorrectCount, positions);
         return positions;
         

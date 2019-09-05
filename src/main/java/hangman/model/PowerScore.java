@@ -56,6 +56,7 @@ public class PowerScore implements GameScore{
         
         @Override
         public int getScore(){
+	    positionsSaved = new ArrayList<Integer> ();
             return 0;
         }
 
